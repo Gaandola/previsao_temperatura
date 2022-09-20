@@ -19,7 +19,7 @@ def index():
             'temperatura': r['main']['temp'],
             'icone':r['weather'][0]['icon'],
             }
-        #print (dados)
+        print (dados)
         lista.append(dados)
     #print(lista)
     return render_template('previsao_tempo.html',lista=lista,l=local),200
