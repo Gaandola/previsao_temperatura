@@ -12,7 +12,7 @@ def index():
     for a in local:
         url= f"http://api.openweathermap.org/data/2.5/weather?q={a}&units=metric&appid={api}"
         r = requests.get(url.format(local)).json()
-        #print(r)
+        
         
         dados = {  
             'cidade' :a ,
