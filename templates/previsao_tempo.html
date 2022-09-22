@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -31,27 +31,27 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-offset-4 is-4">
-                    {% for i in lista %}   
+                  
                     <div class="box">
                         <article class="media">
                             <div class="media-left">
                                 <figure class="image is-50x50">
-                                    <img src="http://openweathermap.org/img/w/{{ i.icone }}.png" alt="Image">
+                                    <img src="http://openweathermap.org/img/w/{{ dados.icone }}.png" alt="Image">
                                 </figure>
                             </div>
                             <div class="media-content">
                                 <div class="content">
                                     <p>
-                                        <span class="title">{{ i.cidade }}</span>
+                                        <span class="title">{{ dados.cidade }}</span>
                                         <br>
-                                        <span class="subtitle">{{ i.temperatura }} °C</span>
+                                        <span class="subtitle">{{ dados.temperatura }} °C</span>
 
                                     </p>
                                 </div>
                             </div>
                         </article>
                     </div>
-                    {% endfor %}    
+                      
                 </div>
             </div>
         </div>
